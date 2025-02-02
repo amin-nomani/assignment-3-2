@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<!-- font awesome link -->
+	<script src="https://kit.fontawesome.com/256fb4f248.js" crossorigin="anonymous"></script>
+	<!-- google font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+	<!-- daisyUi link -->
+	<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+	<script src="https://cdn.tailwindcss.com"></script>
+	<!-- font family -->
+	<style>
+		.body-font {
+			font-family: "Sora", serif;
+		}
+	</style>
+	<script>
+		tailwind.config = {
+			theme: {
+				extend: {
+					colors: {
+						clifford: '#da373d',
+						'btn-color': '#FFFFFF',
+						'banner-color': '#FFFFFF,#EFEBE3',
+						'card-color': '#EFEBE3',
+					}
+				}
+			}
+		}
+	</script>
+</head>
+
+<body class="body-font">
+	<!-- header section -->
+	<header class="bg-banner-color">
+		<!-- navbar section -->
+		<div>
+			<div class="navbar  container mx-auto">
+				<div class="navbar-start">
+					<div class="flex items-center gap-2">
+						<img class="w-36 h-16 lg:ml-0 md:block hidden " src="c2-assets/logo-header.png" alt="#">
+						<img class="w-14 h-10 ml-8 block md:hidden " src="c2-assets/Group.png" alt="#">
+					</div>
+				</div>
+				<div class="navbar-center hidden lg:flex">
+					<ul class="menu menu-horizontal px-1">
+						<li class=" text-xl font-semibold"><a>Services</a></li>
+						<li class=" text-xl font-semibold"><a>Product</a></li>
+						<li class=" text-xl font-semibold"><a>Contact us</a></li>
+					</ul>
+				</div>
+				<div class="navbar-end">
+					<div class="hidden items-center gap-2 sm:mr-0 sm:flex">
+						<i class="fa-solid font-semibold text-2xl fa-magnifying-glass"></i>
+						<i class="fa-solid font-semibold  text-2xl fa-cart-shopping"></i>
+						<a class=" text-xl font-semibold border-2 rounded-xl px-3 py-2 ">Login</a>
+						<a class=" text-xl bg-green-600 px-3 py-2 rounded-xl font-semibold ">Register</a>
+					</div>
+					<div class="dropdown">
+						<div tabindex="0" role="button" class="btn btn-ghost hidden max-sm:flex">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
+								stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									d="M4 6h16M4 12h8m-8 6h16" />
+							</svg>
+						</div>
+						<ul tabindex="0"
+							class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-60 p-2 shadow">
+							<li class="font-bold text-xl"><a>Services</a></li>
+							<li class="font-bold text-xl"><a>Product</a></li>
+							<li class="font-bold text-xl"><a>Contact us</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- banner section -->
+		<div class="container mx-auto my-28  max-md:my-4">
+			<div class=" max-w-2xl mx-auto mb-8 text-center ">
+				<h1 class="title-font font-bold text-4xl mb-7 leading-[40px]">Freshness <span class="text-green-600">You
+						Can <br>
+						Count</span> On, Prices You’ll Love!
+				</h1>
+				<p class="text-xl mb-9">Shop your daily essentials at unbeatable prices. From fresh produce to pantry
+					staples, we’ve got you covered every day!</p>
+			</div>
+			<img class="w-10/12 max-h-[460px] mx-auto " src="c2-assets/hero-vegetables.png" alt="">
+		</div>
+	</header>
+	<!-- main section -->
+	<main>
+		<!-- category section -->
+		<section class="container mx-auto my-20">
+			<div>
+				<h4 class="text-4xl text-green-600 font-bold mb-20">Services</h4>
+				<div class="grid grid-cols-1 mx-auto sm:grid-cols-2 lg:grid-cols-3 gap-6">
+					<!-- happy-card-1 -->
+					<div class="card bg-card-color p-6 mx-auto items-center text-center border shadow-xl">
+						<div class="avatar mx-12 my-8 ">
+							<div class="w-24 h-24  p-4 bg-white rounded-full">
+								<img src="c2-assets/service.png" />
+							</div>
+						</div>
+						<div class="mb-5 text-center items-center ">
+							<h4 class=" text-xl font-semibold mb-3">24/7 Services</h4>
+							<p class=" mb-3 text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+								sed do eiusmod tempor incididunt</p>
+						</div>
+					</div>
+					<!-- happy-card-2 -->
+					<div class="card bg-card-color p-6 mx-auto items-center text-center border shadow-xl">
+						<div class="avatar mx-12 my-8 ">
+							<div class="w-24 h-24  p-4 bg-white rounded-full">
+								<img src="c2-assets/healthy.png" />
+							</div>
+						</div>
+						<div class="mb-5 text-center items-center ">
+							<h4 class=" text-xl font-semibold mb-3">Healthy Products</h4>
+							<p class=" mb-3 text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+								sed do eiusmod tempor incididunt</p>
+						</div>
+					</div>
+					<!-- happy-card-3 -->
+					<div class="card bg-card-color p-6 mx-auto items-center text-center border shadow-xl">
+						<div class="avatar mx-12 my-8 ">
+							<div class="w-24 h-24  p-4 bg-white rounded-full">
+								<img src="c2-assets/delivery.png" />
+							</div>
+						</div>
+						<div class="mb-5 text-center items-center ">
+							<h4 class=" text-xl font-semibold mb-3">Fast Deliverys</h4>
+							<p class=" mb-3 text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+								sed do eiusmod tempor incididunt</p>
+						</div>
+					</div>
+				</div>
+		</section>
+		<!-- Products section -->
+		<section class="bg-card-color">
+			<div class="container mx-auto my-32">
+				<h4 class="text-4xl py-10 title-font mx-auto font-bold mb-12 mt-20">Trending Pet Products</h4>
+				<div class=" gap-6 lg:flex mb-20 ">
+					<div class="w-[424px] h-[402px]  mx-auto mb-7 lg:mb-0 relative bg-green-400 rounded-xl  ">
+						<!-- text aria -->
+						<div class="absolute top-28 left-12 max-w-2xl ">
+							<h1 class="text-white font-bold text-4xl mb-3 leading-[40px]">30% off </h1>
+							<p class="text-xl mb-9">Discover a world of treats, toys, and essentials handpicked for </p>
+							<a class=" text-xl border-2 bg-white px-4 py-2 rounded-xl font-semibold ">Buy Now</a>
+						</div>
+						<!-- img aria -->
+						<div class="w-80 max-h-96 absolute bottom-0 right-0">
+							<img class="w-full " src="c2-assets/vegetable-offer.png" alt="">
+						</div>
+					</div>
+					<!-- card section -->
+					<div class="grid grid-rows-5 lg:grid-rows-3 mx-auto grid-flow-col gap-4">
+						<!-- card -1 -->
+						<div class="flex justify-center items-center bg-white border p-5 shadow-xl rounded-xl">
+							<div class="w-28 flex h-28 justify-center items-center rounded-xl   bg-card-color">
+								<img class=" w-full max-h-full p-2" src="c2-assets/onion.png" alt="#">
+							</div>
+							<div class=" items-center max-w-64 h-28 mx-4 ">
+								<div class=" flex mb-2 ">
+									<i class="fa-solid fa-star text-base text-amber-500"></i>
+									<h3 class=" ml-1 font-bold text-base">4.5</h3>
+								</div>
+								<h3 class="text-xl font-bold mb-2">Onion 1 KG</h3>
+								<p class="font-bold text-base">$ 99.00</p>
+							</div>
+						</div>
+						<!-- card -2 -->
+						<div class="flex justify-center items-center bg-white border p-5 shadow-xl rounded-xl">
+							<div class="w-28 flex h-28 justify-center items-center rounded-xl   bg-card-color">
+								<img class=" w-full max-h-full p-2" src="c2-assets/potato.png" alt="#">
+							</div>
+							<div class=" items-center max-w-64 h-28 mx-4 ">
+								<div class=" flex mb-2 ">
+									<i class="fa-solid fa-star text-base text-amber-500"></i>
+									<h3 class=" ml-1 font-bold text-base">4.5</h3>
+								</div>
+								<h3 class="text-xl font-bold mb-2">Onion 1 KG</h3>
+								<p class="font-bold text-base">$ 99.00</p>
+							</div>
+						</div>
+						<!-- card -3 -->
+						<div class="flex justify-center items-center bg-white border p-5 shadow-xl rounded-xl">
+							<div class="w-28 flex h-28 justify-center items-center rounded-xl   bg-card-color">
+								<img class=" w-full max-h-full p-2" src="c2-assets/onion.png" alt="#">
+							</div>
+							<div class=" items-center max-w-64 h-28 mx-4 ">
+								<div class=" flex mb-2 ">
+									<i class="fa-solid fa-star text-base text-amber-500"></i>
+									<h3 class=" ml-1 font-bold text-base">4.5</h3>
+								</div>
+								<h3 class="text-xl font-bold mb-2">Onion 1 KG</h3>
+								<p class="font-bold text-base">$ 99.00</p>
+							</div>
+						</div>
+						<!-- card -4 -->
+						<div class="flex justify-center items-center bg-white border p-5 shadow-xl rounded-xl">
+							<div class="w-28 flex h-28 justify-center items-center rounded-xl   bg-card-color">
+								<img class=" w-full max-h-full p-2" src="c2-assets/tomato.png" alt="#">
+							</div>
+							<div class=" items-center max-w-64 h-28 mx-4 ">
+								<div class=" flex mb-2 ">
+									<i class="fa-solid fa-star text-base text-amber-500"></i>
+									<h3 class=" ml-1 font-bold text-base">4.5</h3>
+								</div>
+								<h3 class="text-xl font-bold mb-2">Onion 1 KG</h3>
+								<p class="font-bold text-base">$ 99.00</p>
+							</div>
+						</div>
+						<!-- card -5 -->
+						<div class="flex justify-center items-center bg-white border p-5 shadow-xl rounded-xl">
+							<div class="w-28 flex h-28 justify-center items-center rounded-xl   bg-card-color">
+								<img class=" w-full max-h-full p-2" src="c2-assets/potato.png" alt="#">
+							</div>
+							<div class=" items-center max-w-64 h-28 mx-4 ">
+								<div class=" flex mb-2 ">
+									<i class="fa-solid fa-star text-base text-amber-500"></i>
+									<h3 class=" ml-1 font-bold text-base">4.5</h3>
+								</div>
+								<h3 class="text-xl font-bold mb-2">Onion 1 KG</h3>
+								<p class="font-bold text-base">$ 99.00</p>
+							</div>
+						</div>
+						<!-- card -6 -->
+						<div class="flex justify-center items-center bg-white border p-5 shadow-xl rounded-xl">
+							<div class="w-28 flex h-28 justify-center items-center rounded-xl   bg-card-color">
+								<img class=" w-full max-h-full p-2" src="c2-assets/onion.png" alt="#">
+							</div>
+							<div class=" items-center max-w-64 h-28 mx-4 ">
+								<div class=" flex mb-2 ">
+									<i class="fa-solid fa-star text-base text-amber-500"></i>
+									<h3 class=" ml-1 font-bold text-base">4.5</h3>
+								</div>
+								<h3 class="text-xl font-bold mb-2">Onion 1 KG</h3>
+								<p class="font-bold text-base">$ 99.00</p>
+							</div>
+						</div>
+						<!-- card -7 -->
+						<div class="flex justify-center items-center bg-white border p-5 shadow-xl rounded-xl">
+							<div class="w-28 flex h-28 justify-center items-center rounded-xl   bg-card-color">
+								<img class=" w-full max-h-full p-2" src="c2-assets/potato.png" alt="#">
+							</div>
+							<div class=" items-center max-w-64 h-28 mx-4 ">
+								<div class=" flex mb-2 ">
+									<i class="fa-solid fa-star text-base text-amber-500"></i>
+									<h3 class=" ml-1 font-bold text-base">4.5</h3>
+								</div>
+								<h3 class="text-xl font-bold mb-2">Onion 1 KG</h3>
+								<p class="font-bold text-base">$ 99.00</p>
+							</div>
+						</div>
+						<!-- card -8 -->
+						<div class="flex justify-center items-center bg-white border p-5 shadow-xl rounded-xl">
+							<div class="w-28 flex h-28 justify-center items-center rounded-xl   bg-card-color">
+								<img class=" w-full max-h-full p-2" src="c2-assets/tomato.png" alt="#">
+							</div>
+							<div class=" items-center max-w-64 h-28 mx-4 ">
+								<div class=" flex mb-2 ">
+									<i class="fa-solid fa-star text-base text-amber-500"></i>
+									<h3 class=" ml-1 font-bold text-base">4.5</h3>
+								</div>
+								<h3 class="text-xl font-bold mb-2">Onion 1 KG</h3>
+								<p class="font-bold text-base">$ 99.00</p>
+							</div>
+						</div>
+						<!-- card -9 -->
+						<div class="flex justify-center items-center bg-white border p-5 shadow-xl rounded-xl">
+							<div class="w-28 flex h-28 justify-center items-center rounded-xl   bg-card-color">
+								<img class=" w-full max-h-full p-2" src="c2-assets/onion.png" alt="#">
+							</div>
+							<div class=" items-center max-w-64 h-28 mx-4 ">
+								<div class=" flex mb-2 ">
+									<i class="fa-solid fa-star text-base text-amber-500"></i>
+									<h3 class=" ml-1 font-bold text-base">4.5</h3>
+								</div>
+								<h3 class="text-xl font-bold mb-2">Onion 1 KG</h3>
+								<p class="font-bold text-base">$ 99.00</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<!-- footer section -->
+	<footer></footer>
+</body>
+
+</html>
